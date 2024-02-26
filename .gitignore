@@ -35,6 +35,18 @@ data/images/*
 !data/images/bus.jpg
 !data/*.sh
 
+# Custom additions
+data/training_data/*
+data/validation_data/*
+predictions/*/*
+!data/training_data
+!data/training_data/.gitkeep
+!data/validation_data
+!data/validation_data/.gitkeep
+!predictions/.gitkeep
+!predictions/datasets/.gitkeep
+!predictions/results/.gitkeep
+
 results*.csv
 
 # Datasets -------------------------------------------------------------------------------------------------------------
@@ -60,6 +72,7 @@ VOC/
 *_saved_model/
 *_web_model/
 *_openvino_model/
+*_paddle_model/
 darknet53.conv.74
 yolov3-tiny.conv.15
 
