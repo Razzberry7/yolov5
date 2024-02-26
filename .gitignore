@@ -27,10 +27,6 @@ storage.googleapis.com
 runs/*
 data/*
 data/images/*
-data/training_data/*
-data/validation_data/*
-!data/training_data
-!data/validation_data
 !data/*.yaml
 !data/hyps
 !data/scripts
@@ -38,6 +34,18 @@ data/validation_data/*
 !data/images/zidane.jpg
 !data/images/bus.jpg
 !data/*.sh
+
+# Custom additions
+data/training_data/*
+data/validation_data/*
+predictions/*/*
+!data/training_data
+!data/training_data/.gitkeep
+!data/validation_data
+!data/validation_data/.gitkeep
+!predictions/.gitkeep
+!predictions/datasets/.gitkeep
+!predictions/results/.gitkeep
 
 results*.csv
 
